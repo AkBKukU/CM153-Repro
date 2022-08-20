@@ -22,7 +22,7 @@ Thanks to Roland who has a [working CM-100 and CM-153](https://www.youtube.com/w
 |7120|DS26LS31CN|https://www.ti.com/lit/ds/symlink/am26ls31.pdf|
 |7121|DS26LS32CN|https://www.ti.com/lit/ds/symlink/am26ls32am.pdf|
 |X-TAL|4.9152MHz||
-|Big cap|50V 16uF||
+|Big cap|50V 10uF||
 |X5|2x8 pin IDC||
 |X2|2x4 pin IDC||
 |Y3|15 pin D-Sub||
