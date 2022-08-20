@@ -12,7 +12,7 @@ Thanks to Roland who has a [working CM-100 and CM-153](https://www.youtube.com/w
 |7104,7105|PC74HCT138P|https://archive.org/details/74HCT138|
 |7106|PC74HC08P|https://archive.org/details/manuallib-id-2654066|
 |7107,7108|PC74HC32P|https://assets.nexperia.com/documents/data-sheet/74HC_HCT32.pdf|
-|7109|PC74HC368P|74HC368|
+|7109|PC74HC368P|https://assets.nexperia.com/documents/data-sheet/74HC_HCT368.pdf|
 |7110|PC74HC04P|https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf|
 |7111|PC74HC125P|https://assets.nexperia.com/documents/data-sheet/74HC_HCT125.pdf|
 |7112,7113|PC74HC74P|https://assets.nexperia.com/documents/data-sheet/74HC_HCT74.pdf|
