@@ -1,0 +1,1 @@
+Thank you to Roland who has a [working CM-100 and CM-153](https://www.youtube.com/watch?v=fj-uSWg0LOY) for taking these reference images for determining what the chips and other parts on the card are and how the traces are routed!
