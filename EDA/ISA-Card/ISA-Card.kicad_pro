@@ -373,12 +373,7 @@
         "microvia_diameter": 0.5,
         "microvia_drill": 0.2,
         "name": "FLOPPY_VCC",
-        "nets": [
-          "/FLOPPY1_VCC",
-          "/FLOPPY2_VCC",
-          "/FLOPPY3_VCC",
-          "/FLOPPY4_VCC"
-        ],
+        "nets": [],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 1.2,
@@ -417,8 +412,6 @@
         "microvia_drill": 0.2,
         "name": "VCC",
         "nets": [
-          "+12V",
-          "-12V",
           "VCC"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
