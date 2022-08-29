@@ -1,6 +1,6 @@
  # Philips CM-153 LMSI Reproduction Card
 
-![A 3d render of the board](card-render-partial.png "A render of the clone PCB")
+![A 3d render of the board](EDA/card-render-partial.png "A render of the clone PCB")
  
 This project aims to reproduce the LMSI CM-153 card needed to operate a Philips CM-100 CD-ROM drive. This drive was originally released in 1985 and used an early version of the LSMI protocol to connect. Later versions of LMSI cards, such as the CM-260, are not compatible with earlier drives (I do not know what the exactly compatibilities are). So an early card is required. The CM-153 is a very uncommon part to find due to it's limited use, high cost, and the fact that it would probably be tossed out with the computer when upgraded being separated from its original drive.
 
@@ -14,14 +14,14 @@ The majority of the card has been reverse engineered at this point and a prelimi
 
 ### Response
 
-The response signal from the drive interface does not currently connected anywhere other than between the differental buffer and internal connector. The signal likely goes somewhere to the bottom pins of the UART but it has not yet been determined where.
+The response signal from the drive interface does not currently connected anywhere other than between the differential buffer and internal connector. The signal likely goes somewhere to the bottom pins of the UART but it has not yet been determined where.
 
 ## Potential Issues
 
 ### 7116, 7117 RCLK
 
-The RCLK signal for the 7116, 7116 74HC595s appears to go under 7110 but due to the power rails it could only connect to the trace next to it. This would connect all three 595 RCLK's together which seems sensible but isn't visually verifiable. An alternative is that it connects to the via farther away with a seperate signal that has very similar origins and would explain why the original via is not on top of the trace.
-./
+The RCLK signal for the 7116, 7116 74HC595s appears to go under 7110 but due to the power rails it could only connect to the trace next to it. This would connect all three 595 RCLK's together which seems sensible but isn't visually verifiable. An alternative is that it connects to the via farther away with a separate signal that has very similar origins and would explain why the original via is not on top of the trace.
+
 ## Point to Point Checks to Make
 
  - **Response** : Pin 1 of `X5` (internal drive connector) to pins on `7119` (8251 UART). `X5` should connect to `7119` somewhere.
