@@ -16,9 +16,16 @@ The majority of the card has been reverse engineered at this point and a prelimi
 
 The response signal from the drive interface does not currently connected anywhere other than between the differental buffer and internal connector. The signal likely goes somewhere to the bottom pins of the UART but it has not yet been determined where.
 
-### 7116, 7116 RCLK
+## Potential Issues
 
-The RCLK signal for the 7116, 7116 74HC595s appears to go under 7110 but it is not known which pin it connects to.
+### 7116, 7117 RCLK
+
+The RCLK signal for the 7116, 7116 74HC595s appears to go under 7110 but due to the power rails it could only connect to the trace next to it. This would connect all three 595 RCLK's together which seems sensible but isn't visually verifiable.
+
+## Point to Point Checks to Make
+
+ - **Response** : Pin 1 of `X5` (internal drive connector) to pins on `7119` (8251 UART). `X5` should connect to `7119` somewhere.
+ - **RCLK** : Pin 12 of `7116, 7117, 7118` between the themselves. They are probably connected but I am unsure
 
 ## Parts List
 |RefDes|Part Number| Datasheet|
