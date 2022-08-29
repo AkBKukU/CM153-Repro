@@ -1,8 +1,24 @@
  # Philips CM-153 LMSI Reproduction Card
+
+![A 3d render of the board](card-render-partial.png "A render of the clone PCB")
  
- This project aims to reproduce the LMSI CM-153 card needed to operate a Philips CM-100 CD-ROM drive. This drive was originally released in 1985 and used an early version of the LSMI protocol to connect. Later versions of LMSI cards, such as the CM-260, are not compatible with earlier drives (I do not know what the exactly compatibilities are). So an early card is required. The CM-153 is a very uncommon part to find due to it's limited use, high cost, and the fact that it would probably be tossed out with the computer when upgraded being separated from its original drive.
+This project aims to reproduce the LMSI CM-153 card needed to operate a Philips CM-100 CD-ROM drive. This drive was originally released in 1985 and used an early version of the LSMI protocol to connect. Later versions of LMSI cards, such as the CM-260, are not compatible with earlier drives (I do not know what the exactly compatibilities are). So an early card is required. The CM-153 is a very uncommon part to find due to it's limited use, high cost, and the fact that it would probably be tossed out with the computer when upgraded being separated from its original drive.
 
 Thanks to Roland who has a [working CM-100 and CM-153](https://www.youtube.com/watch?v=fj-uSWg0LOY) we have some pretty high quality reference images of what this card looks like. It uses all off the shelf 74 series logic chips and one 8251A UART controller. It should therefore be possible to recreate without needing and rare chips or ROM dumps.
+
+## Current Status
+
+The majority of the card has been reverse engineered at this point and a preliminary PCB has been layed out. The schematic is partially blocked out for functions but still has large sections that matched the physical layout.
+
+## Known Errata
+
+### Response
+
+The response signal from the drive interface does not currently connected anywhere other than between the differental buffer and internal connector. The signal likely goes somewhere to the bottom pins of the UART but it has not yet been determined where.
+
+### 7116, 7116 RCLK
+
+The RCLK signal for the 7116, 7116 74HC595s appears to go under 7110 but it is not known which pin it connects to.
 
 ## Parts List
 |RefDes|Part Number| Datasheet|

@@ -9809,7 +9809,7 @@
     (property "Value" "8251" (id 1) (at 383.54 25.4 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "Package_DIP:DIP-28_W15.24mm_Socket" (id 2) (at 391.16 46.99 0)
+    (property "Footprint" "Package_DIP:DIP-28_W15.24mm" (id 2) (at 391.16 46.99 0)
       (effects (font (size 1.524 1.524)) hide)
     )
     (property "Datasheet" "" (id 3) (at 391.16 46.99 0)
@@ -12256,7 +12256,7 @@
       (reference "U7118") (unit 1) (value "74HC595") (footprint "Package_DIP:DIP-16_W7.62mm")
     )
     (path "/47711afd-a54e-4a94-acca-b81dc67be3e8"
-      (reference "U7119") (unit 1) (value "8251") (footprint "Package_DIP:DIP-28_W15.24mm_Socket")
+      (reference "U7119") (unit 1) (value "8251") (footprint "Package_DIP:DIP-28_W15.24mm")
     )
     (path "/c690bf42-268f-40f6-adde-d54c60b9dc86"
       (reference "U7120") (unit 1) (value "26LS31") (footprint "Package_DIP:DIP-16_W7.62mm")
