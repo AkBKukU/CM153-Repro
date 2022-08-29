@@ -26,6 +26,20 @@ The RCLK signal for the 7116, 7116 74HC595s appears to go under 7110 but due to 
 
  - **Response** : Pin 1 of `X5` (internal drive connector) to pins on `7119` (8251 UART). `X5` should connect to `7119` somewhere.
  - **RCLK** : Pin 12 of `7116, 7117`to pin 2 of `7110`. They are probably connected but I am unsure
+ - **Address Selector** : The top side address pins seem to all be connected to eachother but it's not visible. Also they are probably connected to pin 5 on `7107` but it cannot be seen.
+ - **Data Clock** : Pin 1 on `7107` is probably for the data clock but can't be seen, it liklely connect to pin 11 on `7113`
+ - **Unknown Clock Related** : Pin 2 & 13 on `7107` is probably related to the data clock but can't be seen, it liklely connect to pin 9 on `7113`
+ - **Resistor** : The resitor under `7108` probably connects to pin 2 of the same chip on the side with the via but it cannot be seen
+ - **RCLK Source** : The trace going under `7115` probably goes to pin 6 but cannot be seen. It comes from Pin 1 on `7110`
+  - **UART** : The UART has a lot of traces under it that cannot be seen, the routings used here are:
+    - `UART` Pin 27 to `7116` Pin 7
+    - `UART` Pin 19 to `X5` Pin 3
+    - `UART` Pin 25 & 9 to `X5` Pin 7
+    - `X5` Pin 5 to `7116` Pin 14
+    - `UART` Pin 12 to `7102` Pin 18
+    - `UART` Pin 8 to `7116` Pin 15
+    - `UART` Pin 2 to `7117` Pin 4
+    - `UART` Pin 11 to `7105` Pin 4
 
 ## Parts List
 |RefDes|Part Number| Datasheet|
