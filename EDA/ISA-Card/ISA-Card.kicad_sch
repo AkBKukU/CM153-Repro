@@ -5615,6 +5615,9 @@
   (junction (at 293.37 59.69) (diameter 0) (color 0 0 0 0)
     (uuid c613d1fa-5a09-4c02-a232-637cb924f363)
   )
+  (junction (at 55.88 313.69) (diameter 0) (color 0 0 0 0)
+    (uuid c6ada52a-8599-4039-a3bd-96b41f08419a)
+  )
   (junction (at 476.25 114.3) (diameter 0) (color 0 0 0 0)
     (uuid c7eaeeb2-50bd-40ba-b0c8-458199b31b03)
   )
@@ -5874,7 +5877,7 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 00712174-00de-4d47-8616-df34cbbfaea8)
   )
-  (wire (pts (xy 55.88 316.23) (xy 44.45 316.23))
+  (wire (pts (xy 44.45 313.69) (xy 55.88 313.69))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 00b32f01-3f27-4b3d-bddc-edc18799f1d5)
   )
@@ -7368,7 +7371,7 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid a0b971b3-6f3b-4de4-98c7-c26a81c7b05e)
   )
-  (wire (pts (xy 44.45 316.23) (xy 44.45 322.58))
+  (wire (pts (xy 44.45 313.69) (xy 44.45 322.58))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid a0ba5526-e161-4087-869c-f13ae15e8e32)
   )
@@ -10658,7 +10661,7 @@
     (pin "1" (uuid d14c04cd-fc98-442a-8f1f-8cc86253437e))
   )
 
-  (symbol (lib_id "Device:Crystal") (at 252.73 29.21 0) (mirror y) (unit 1)
+  (symbol (lib_id "Device:Crystal") (at 252.73 29.21 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 9468e5c5-bd71-4ac5-ab4c-a5a500cbdc30)
     (property "Reference" "X-TAL1" (id 0) (at 252.73 21.59 0))
@@ -11187,7 +11190,7 @@
   (symbol (lib_id "power:GND") (at 269.24 176.53 180) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid c85fd568-008f-409c-98ed-141aeb21416f)
-    (property "Reference" "#PWR?" (id 0) (at 269.24 170.18 0)
+    (property "Reference" "#PWR0144" (id 0) (at 269.24 170.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 271.78 175.2599 0)
@@ -11964,6 +11967,9 @@
     (path "/758b06ca-3e86-4f38-8412-5764fef0f794"
       (reference "#PWR0143") (unit 1) (value "VCC") (footprint "")
     )
+    (path "/c85fd568-008f-409c-98ed-141aeb21416f"
+      (reference "#PWR0144") (unit 1) (value "GND") (footprint "")
+    )
     (path "/08ebbfa7-40a7-4296-9c2e-1cb73819b52e"
       (reference "#PWR0145") (unit 1) (value "GND") (footprint "")
     )
@@ -12041,9 +12047,6 @@
     )
     (path "/5a6fe37f-684f-4bb3-923d-4465f067f815"
       (reference "#PWR0170") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/c85fd568-008f-409c-98ed-141aeb21416f"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000077de52a2"
       (reference "BUS1") (unit 1) (value "BUSPC_DEV") (footprint "My_Components:Conn_Edge_PCB_ISA8")
