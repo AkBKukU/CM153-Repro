@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "Philips-Shapes")(type "KiCad")(uri "${KIPRJMOD}/Philips-Shapes.pretty")(options "")(descr ""))
+)

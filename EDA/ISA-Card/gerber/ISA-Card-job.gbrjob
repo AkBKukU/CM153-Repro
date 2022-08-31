@@ -3,15 +3,15 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "6.0.2+dfsg-1"
+      "Version": "6.0.7-f9a2dced07~116~ubuntu20.04.1"
     },
-    "CreationDate": "2022-08-28T20:59:57-07:00"
+    "CreationDate": "2022-08-31T13:30:29-07:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "ISA-Card",
       "GUID": "4953412d-4361-4726-942e-6b696361645f",
-      "Revision": "1.0"
+      "Revision": "alpha"
     },
     "Size": {
       "X": 138.811,
@@ -19,15 +19,17 @@
     },
     "LayerNumber": 2,
     "BoardThickness": 1.6,
-    "Finish": "None"
+    "Finish": "HAL SnPb",
+    "EdgeConnector": true,
+    "EdgeConnectorBevelled": true
   },
   "DesignRules": [
     {
       "Layers": "Outer",
-      "PadToPad": 0.225,
-      "PadToTrack": 0.225,
+      "PadToPad": 0.0,
+      "PadToTrack": 0.0,
       "TrackToTrack": 0.225,
-      "MinLineWidth": 0.275
+      "MinLineWidth": 0.25
     }
   ],
   "FilesAttributes": [
