@@ -8447,7 +8447,7 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid c89de97f-af8d-441d-a6e9-5b6d596b041f)
   )
-  (wire (pts (xy 377.19 326.39) (xy 381 326.39))
+  (wire (pts (xy 373.38 326.39) (xy 381 326.39))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid c95b0f9f-ad65-48ac-a310-b6f2717d80a6)
   )
@@ -11954,6 +11954,20 @@
     (pin "2" (uuid 118ca73b-638b-4a1b-82de-2d062336f8a2))
   )
 
+  (symbol (lib_id "Connector:TestPoint") (at 373.38 326.39 90) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid 76754a92-43e4-432f-88d4-396c823c1b87)
+    (property "Reference" "TP2" (id 0) (at 365.76 326.39 90))
+    (property "Value" "TestPoint" (id 1) (at 359.41 326.39 90))
+    (property "Footprint" "Philips-Shapes:Test Point" (id 2) (at 373.38 321.31 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 373.38 321.31 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 02a96378-cded-4b73-bf27-3f8258be0452))
+  )
+
   (symbol (lib_id "74xx:74LS125") (at 332.74 182.88 90) (unit 4)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 76eedd09-5c9d-4f3c-a880-5057fedaf087)
@@ -13690,6 +13704,22 @@
     (pin "1" (uuid 9b9fc9e2-8f15-44fd-bf75-bbfcb35adfce))
   )
 
+  (symbol (lib_id "power:VCC") (at 279.4 187.96 0) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid d2892950-6447-4040-b360-049a6c58765a)
+    (property "Reference" "#PWR?" (id 0) (at 279.4 184.15 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "VCC" (id 1) (at 279.4 191.77 0))
+    (property "Footprint" "" (id 2) (at 279.4 187.96 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 279.4 187.96 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid d3a09717-2e08-40f0-80f2-0cace2dbd2cd))
+  )
+
   (symbol (lib_id "power:VCC") (at 27.94 347.98 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid d3eb7c43-d263-4e89-bda0-f9656d09b00f)
@@ -13888,24 +13918,6 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid e2130da5-6bfd-4cff-a6e0-ce36fa9ed320))
-  )
-
-  (symbol (lib_id "Connector:TestPoint") (at 93.98 97.79 270) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid e1ea1cd3-fe4b-4697-9137-a828c5d1b6bd)
-    (property "Reference" "TP2" (id 0) (at 99.06 96.5199 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "TestPoint" (id 1) (at 99.06 99.0599 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Philips-Shapes:Test Point" (id 2) (at 93.98 102.87 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 93.98 102.87 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b25ce5e1-7095-4f87-9fe9-81e37836ed47))
   )
 
   (symbol (lib_name "26LS32_1") (lib_id "Comm:26LS32") (at 492.76 200.66 180) (unit 1)
@@ -14529,6 +14541,9 @@
     (path "/5a6fe37f-684f-4bb3-923d-4465f067f815"
       (reference "#PWR0170") (unit 1) (value "GND") (footprint "")
     )
+    (path "/d2892950-6447-4040-b360-049a6c58765a"
+      (reference "#PWR?") (unit 1) (value "VCC") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-000077de52a2"
       (reference "BUS1") (unit 1) (value "BUSPC_DEV") (footprint "My_Components:Conn_Edge_PCB_ISA8")
     )
@@ -14610,7 +14625,7 @@
     (path "/33ce3e79-111d-472e-a370-fb24fc054247"
       (reference "TP1") (unit 1) (value "TestPoint") (footprint "Philips-Shapes:Test Point")
     )
-    (path "/e1ea1cd3-fe4b-4697-9137-a828c5d1b6bd"
+    (path "/76754a92-43e4-432f-88d4-396c823c1b87"
       (reference "TP2") (unit 1) (value "TestPoint") (footprint "Philips-Shapes:Test Point")
     )
     (path "/a4be8d0f-7e03-4e89-a16b-145258f96adf"
