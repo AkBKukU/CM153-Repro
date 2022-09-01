@@ -26,7 +26,7 @@ The RCLK signal for the 7116, 7116 74HC595s appears to go under 7110 but due to 
 
 ### Most Critical
  - **Response** : Pin 1 of `X5` (internal drive connector) to pin 3 on `7119` (8251 UART).
- - **Clock Enable** : Pin 12 of `7121` is the active low enable line for the external drive's input buffer. It seems like it may connect to Pin 24 on 2119 which is UART DTR.
+ - **Input Buffer Enable** : Pin 12 of `7121` is the active low enable line for the external drive's input buffer. It seems like it may connect to Pin 24 on 2119 which is UART DTR.
 
 ### Generally Not Visible
  - **RCLK** : Pin 12 of `7116, 7117`to pin 2 of `7110`. They are probably connected but I am unsure`
