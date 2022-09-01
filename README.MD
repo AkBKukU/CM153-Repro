@@ -24,8 +24,12 @@ The RCLK signal for the 7116, 7116 74HC595s appears to go under 7110 but due to 
 
 ## Point to Point Checks to Make
 
- - **Response** : Pin 1 of `X5` (internal drive connector) to pins on `7119` (8251 UART). `X5` should connect to `7119` somewhere.
- - **RCLK** : Pin 12 of `7116, 7117`to pin 2 of `7110`. They are probably connected but I am unsure
+### Most Critical
+ - **Response** : Pin 1 of `X5` (internal drive connector) to pins on `7119` (8251 UART). `X5` likely connects to `7119` somewhere.
+ - **Clock Enable** : Pin 12 of `7121` is the active low enable line for the external drive's input buffer. It seems like it may connect to Pins 9 & 25 on 2119 which are the UART clocks.
+
+### Generally Not Visible
+ - **RCLK** : Pin 12 of `7116, 7117`to pin 2 of `7110`. They are probably connected but I am unsure`
  - **Address Selector** : The top side address pins seem to all be connected to eachother but it's not visible. Also they are probably connected to pin 5 on `7107` but it cannot be seen.
  - **Data Clock** : Pin 1 on `7107` is probably for the data clock but can't be seen, it liklely connect to pin 11 on `7113`
  - **Unknown Clock Related** : Pin 2 & 13 on `7107` is probably related to the data clock but can't be seen, it liklely connect to pin 9 on `7113`
@@ -34,12 +38,12 @@ The RCLK signal for the 7116, 7116 74HC595s appears to go under 7110 but due to 
   - **UART** : The UART has a lot of traces under it that cannot be seen, the routings used here are:
     - `UART` Pin 27 to `7116` Pin 7
     - `UART` Pin 19 to `X5` Pin 3
-    - `UART` Pin 25 & 9 to `X5` Pin 7
-    - `X5` Pin 5 to `7116` Pin 14
+    - `UART` Pin 25 & 9 to `7114` Pin 7
+    - `X5` Pin 5 to `7121` Pin 5
     - `UART` Pin 12 to `7102` Pin 18
     - `UART` Pin 8 to `7116` Pin 15
-    - `UART` Pin 2 to `7117` Pin 4
-    - `UART` Pin 11 to `7105` Pin 4
+    - `UART` Pin 2 to `7116` Pin 4
+    - `UART` Pin 11 to `7105` Pin 14
 
 ## Parts List
 |RefDes|Part Number| Datasheet|
