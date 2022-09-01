@@ -25,15 +25,15 @@ The RCLK signal for the 7116, 7116 74HC595s appears to go under 7110 but due to 
 ## Point to Point Checks to Make
 
 ### Most Critical
- - **Response** : Pin 1 of `X5` (internal drive connector) to pins on `7119` (8251 UART). `X5` likely connects to `7119` somewhere.
- - **Clock Enable** : Pin 12 of `7121` is the active low enable line for the external drive's input buffer. It seems like it may connect to Pins 9 & 25 on 2119 which are the UART clocks.
+ - **Response** : Pin 1 of `X5` (internal drive connector) to pin 3 on `7119` (8251 UART).
+ - **Clock Enable** : Pin 12 of `7121` is the active low enable line for the external drive's input buffer. It seems like it may connect to Pin 24 on 2119 which is UART DTR.
 
 ### Generally Not Visible
  - **RCLK** : Pin 12 of `7116, 7117`to pin 2 of `7110`. They are probably connected but I am unsure`
  - **Address Selector** : The top side address pins seem to all be connected to eachother but it's not visible. Also they are probably connected to pin 5 on `7107` but it cannot be seen.
- - **Data Clock** : Pin 1 on `7107` is probably for the data clock but can't be seen, it liklely connect to pin 11 on `7113`
- - **Unknown Clock Related** : Pin 2 & 13 on `7107` is probably related to the data clock but can't be seen, it liklely connect to pin 9 on `7113`
- - **Resistor** : The resitor under `7108` probably connects to pin 2 of the same chip on the side with the via but it cannot be seen
+ - **Data Clock** : Pin 1 on `7107` is probably for the data clock but can't be seen, it likely connect to pin 11 on `7113`
+ - **Unknown Clock Related** : Pin 2 & 13 on `7107` is probably related to the data clock but can't be seen, it likely connect to pin 9 on `7113`
+ - **Resistor** : The resistor under `7108` probably connects to pin 2 of the same chip on the side with the via but it cannot be seen
  - **RCLK Source** : The trace going under `7115` probably goes to pin 6 but cannot be seen. It comes from Pin 1 on `7110`
   - **UART** : The UART has a lot of traces under it that cannot be seen, the routings used here are:
     - `UART` Pin 27 to `7116` Pin 7
