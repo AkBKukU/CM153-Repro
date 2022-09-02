@@ -27,6 +27,7 @@ The RCLK signal for the 7116, 7116 74HC595s appears to go under 7110 but due to 
 ### Most Critical
  - **Response** : Pin 1 of `X5` (internal drive connector) to pin 3 on `7119` (8251 UART).
  - **Input Buffer Enable** : Pin 12 of `7121` is the active low enable line for the external drive's input buffer. It seems like it may connect to Pin 24 on 2119 which is UART DTR.
+ - **C4 & C7 Value** : The capacitors in the schematic labeled `C4` & `C7` are part of RC delays that could be any value. If it is possible to measure it would be helpful.
 
 ### Generally Not Visible
  - **RCLK** : Pin 12 of `7116, 7117`to pin 2 of `7110`. They are probably connected but I am unsure`

@@ -1,4 +1,4 @@
-20118664715688109
+20118664715727349
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -74808,6 +74808,13 @@ Mounting Hole
 0
 0
 0
+Philips-Shapes
+Reduced-ISA
+Connector, PCB Edge, ISA8
+CONN BUS ISA
+0
+28
+27
 Philips-Shapes
 Test Point
 
