@@ -500,7 +500,7 @@
   )
 
   (footprint "Connector_Dsub:DSUB-15_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" (layer "F.Cu")
-    (tedit 59FEDEE2) (tstamp 135e8f9e-e7bf-4117-a854-ef6e97651f3e)
+    (tedit 6313ED0F) (tstamp 135e8f9e-e7bf-4117-a854-ef6e97651f3e)
     (at 198.755 111.76 90)
     (descr "15-pin D-Sub connector, horizontal/angled (90 deg), THT-mount, female, pitch 2.77x2.84mm, pin-PCB-offset 7.699999999999999mm, distance of mounting holes 33.3mm, distance of mounting holes to PCB edge 9.12mm, see https://disti-assets.s3.amazonaws.com/tonar/files/datasheets/16730.pdf")
     (tags "15-pin D-Sub connector horizontal angled 90deg THT female pitch 2.77x2.84mm pin-PCB-offset 7.699999999999999mm mounting-holes-distance 33.3mm mounting-hole-offset 33.3mm")
@@ -589,6 +589,21 @@
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/3d/Custom_CM-153_Bracket.step"
+      (offset (xyz 62.3 -11.7 18.6))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 180 0 0))
+    )
+    (model "${KIPRJMOD}/3d/Keystone_7246_Jack_Screw.step"
+      (offset (xyz 6.955 -7 6.25))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 180 0 0))
+    )
+    (model "${KIPRJMOD}/3d/Keystone_7246_Jack_Screw.step"
+      (offset (xyz -26.345 -7 6.25))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 180 0 0))
     )
   )
 
