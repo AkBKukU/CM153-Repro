@@ -10,18 +10,6 @@ Thanks to Roland who has a [working CM-100 and CM-153](https://www.youtube.com/w
 
 The majority of the card has been reverse engineered at this point and a preliminary PCB has been layed out. The schematic is partially blocked out for functions but still has large sections that matched the physical layout.
 
-## Known Errata
-
-### Response
-
-The response signal from the drive interface does not currently connected anywhere other than between the differential buffer and internal connector. The signal likely goes somewhere to the bottom pins of the UART but it has not yet been determined where.
-
-## Potential Issues
-
-### 7116, 7117 RCLK
-
-The RCLK signal for the 7116, 7116 74HC595s appears to go under 7110 but due to the power rails it could only connect to the trace next to it. This would connect all three 595 RCLK's together which seems sensible but isn't visually verifiable. An alternative is that it connects to the via farther away with a separate signal that has very similar origins and would explain why the original via is not on top of the trace.
-
 ## Point to Point Checks to Make
 
 ### Most Critical
@@ -36,7 +24,7 @@ The RCLK signal for the 7116, 7116 74HC595s appears to go under 7110 but due to 
  - **Unknown Clock Related** : Pin 2 & 13 on `7107` is probably related to the data clock but can't be seen, it likely connect to pin 9 on `7113`
  - **Resistor** : The resistor under `7108` probably connects to pin 2 of the same chip on the side with the via but it cannot be seen
  - **RCLK Source** : The trace going under `7115` probably goes to pin 6 but cannot be seen. It comes from Pin 1 on `7110`
-  - **UART** : The UART has a lot of traces under it that cannot be seen, the routings used here are:
+ - **UART** : The UART has a lot of traces under it that cannot be seen, the routings used here are:
     - `UART` Pin 27 to `7116` Pin 7
     - `UART` Pin 19 to `X5` Pin 3
     - `UART` Pin 25 & 9 to `7114` Pin 7
