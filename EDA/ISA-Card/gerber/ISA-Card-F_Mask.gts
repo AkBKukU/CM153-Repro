@@ -1,12 +1,12 @@
-%TF.GenerationSoftware,KiCad,Pcbnew,6.0.2+dfsg-1*%
-%TF.CreationDate,2022-09-05T09:06:21-07:00*%
+%TF.GenerationSoftware,KiCad,Pcbnew,6.0.7-f9a2dced07~116~ubuntu20.04.1*%
+%TF.CreationDate,2022-09-05T09:39:06-07:00*%
 %TF.ProjectId,ISA-Card,4953412d-4361-4726-942e-6b696361645f,alpha*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Soldermask,Top*%
 %TF.FilePolarity,Negative*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 6.0.2+dfsg-1) date 2022-09-05 09:06:21*
+G04 Created by KiCad (PCBNEW 6.0.7-f9a2dced07~116~ubuntu20.04.1) date 2022-09-05 09:39:06*
 %MOMM*%
 %LPD*%
 G01*
