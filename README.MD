@@ -1,4 +1,4 @@
- # Philips CM-153 LMSI Reproduction Card
+# Philips CM-153 LMSI Reproduction Card
 
 ![A 3d render of the board](EDA/card-render-partial.png "A render of the clone PCB")
  
@@ -8,31 +8,7 @@ Thanks to Roland who has a [working CM-100 and CM-153](https://www.youtube.com/w
 
 ## Current Status
 
-The majority of the card has been reverse engineered at this point and a preliminary PCB has been layed out. The schematic is partially blocked out for functions but still has large sections that matched the physical layout.
-
-## Point to Point Checks to Make
-
-### Most Critical
- - **Response** : Pin 1 of `X5` (internal drive connector) to pin 3 on `7119` (8251 UART).
- - **Input Buffer Enable** : Pin 12 of `7121` is the active low enable line for the external drive's input buffer. It seems like it may connect to Pin 24 on 2119 which is UART DTR.
- - **C4 & C7 Value** : The capacitors in the schematic labeled `C4` & `C7` are part of RC delays that could be any value. If it is possible to measure it would be helpful.
-
-### Generally Not Visible
- - **RCLK** : Pin 12 of `7116, 7117`to pin 2 of `7110`. They are probably connected but I am unsure`
- - **Address Selector** : The top side address pins seem to all be connected to eachother but it's not visible. Also they are probably connected to pin 5 on `7107` but it cannot be seen.
- - **Data Clock** : Pin 1 on `7107` is probably for the data clock but can't be seen, it likely connect to pin 11 on `7113`
- - **Unknown Clock Related** : Pin 2 & 13 on `7107` is probably related to the data clock but can't be seen, it likely connect to pin 9 on `7113`
- - **Resistor** : The resistor under `7108` probably connects to pin 2 of the same chip on the side with the via but it cannot be seen
- - **RCLK Source** : The trace going under `7115` probably goes to pin 6 but cannot be seen. It comes from Pin 1 on `7110`
- - **UART** : The UART has a lot of traces under it that cannot be seen, the routings used here are:
-    - `UART` Pin 27 to `7116` Pin 7
-    - `UART` Pin 19 to `X5` Pin 3
-    - `UART` Pin 25 & 9 to `7114` Pin 7
-    - `X5` Pin 5 to `7121` Pin 5
-    - `UART` Pin 12 to `7102` Pin 18
-    - `UART` Pin 8 to `7116` Pin 15
-    - `UART` Pin 2 to `7116` Pin 4
-    - `UART` Pin 11 to `7105` Pin 14
+The card has been fully reverse engineered and all hidden traces have been hand verified on original card to be correct. A physical board will be produced soon and tested. The BOM has not been finalized but will be next.
 
 ## Parts List
 |RefDes|Part Number| Datasheet|
