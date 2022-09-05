@@ -11462,12 +11462,12 @@
   )
 
   (symbol (lib_id "Device:C") (at 292.1 50.8 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom yes) (on_board yes)
     (uuid 58710fde-e990-4d20-ab25-40f3807f2a2d)
-    (property "Reference" "C7" (id 0) (at 295.91 49.5299 0)
+    (property "Reference" "C7" (id 0) (at 285.75 50.8 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "C" (id 1) (at 295.91 52.0699 0)
+    (property "Value" "47pF" (id 1) (at 285.75 53.34 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (id 2) (at 293.0652 54.61 0)
@@ -13700,7 +13700,7 @@
     (property "Reference" "C4" (id 0) (at 198.755 264.795 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "C" (id 1) (at 203.2 264.795 90)
+    (property "Value" "33pF" (id 1) (at 207.01 265.43 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (id 2) (at 204.47 262.5598 0)
@@ -14600,7 +14600,7 @@
       (reference "C3") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_1206_3216Metric")
     )
     (path "/d256bdaa-2cd3-48b7-98b8-d1fa7a625ded"
-      (reference "C4") (unit 1) (value "C") (footprint "Capacitor_SMD:C_1206_3216Metric")
+      (reference "C4") (unit 1) (value "33pF") (footprint "Capacitor_SMD:C_1206_3216Metric")
     )
     (path "/b66fb292-9653-482c-a3af-66a627771468"
       (reference "C5") (unit 1) (value "14pF") (footprint "Capacitor_SMD:C_1206_3216Metric")
@@ -14609,7 +14609,7 @@
       (reference "C6") (unit 1) (value "14pF") (footprint "Capacitor_SMD:C_1206_3216Metric")
     )
     (path "/58710fde-e990-4d20-ab25-40f3807f2a2d"
-      (reference "C7") (unit 1) (value "C") (footprint "Capacitor_SMD:C_1206_3216Metric")
+      (reference "C7") (unit 1) (value "47pF") (footprint "Capacitor_SMD:C_1206_3216Metric")
     )
     (path "/8bdf772b-71bb-4b81-89e2-c4e5f9b79672"
       (reference "C8") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_1206_3216Metric")
