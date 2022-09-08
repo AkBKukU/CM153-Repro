@@ -31,7 +31,20 @@ The card has been fully reverse engineered and all hidden traces have been hand 
 |7120|DS26LS31CN|[Datasheet](https://www.ti.com/lit/ds/symlink/am26ls31.pdf)|NOT AVAILABLE|
 |7121|DS26LS32CN|[Datasheet](https://www.ti.com/lit/ds/symlink/am26ls32am.pdf)|[AM26LS32ACN](https://www.digikey.com/en/products/detail/texas-instruments/AM26LS32ACN/277026)|
 |X-TAL|4.9152MHz||[MP042](https://www.digikey.com/en/products/detail/cts-frequency-controls/MP042/67676)|
-|Big cap|50V 10uF||[ECA-1HHG100B](https://www.digikey.com/en/products/detail/panasonic-electronic-components/ECA-1HHG100B/413608)|
+|Big cap (C9)|50V 10uF||[ECA-1HHG100B](https://www.digikey.com/en/products/detail/panasonic-electronic-components/ECA-1HHG100B/413608)|
 |X5|2x8 pin IDC||[826925-8](https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/826925-8/2276259)|
 |X2|2x4 pin IDC||[826656-2](https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/826656-2/2276228)|
 |Y3|15 pin D-Sub||[D15S13B4GX00LF](https://www.digikey.com/en/products/detail/amphenol-cs-fci/D15S13B4GX00LF/1539503)|
+|C1, C2, C3, C8|100nF||[C1206C104K5RAC7800](https://www.digikey.com/en/products/detail/kemet/C1206C104K5RAC7800/411248)|
+|C4|33pF||[885012008020](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/885012008020/5453728)|
+|C5, C6|14pF||[885012008038](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/885012008038/5453737)|
+|C7|47pF||[885012008021](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/885012008021/5453729)|
+|R1|10KΩ||[RMCF1206JT10K0](https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF1206JT10K0/1757427)|
+|R2|1MΩ||[HV73V2BTTD105J](https://www.digikey.com/en/products/detail/koa-speer-electronics-inc/HV73V2BTTD105J/11495356)|
+|R3|100Ω||[RNCP1206FTD100R](https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RNCP1206FTD100R/2240316)|
+|R4|1KΩ||[RMCF1206JT1K00](https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF1206JT1K00/1757526)|
+|R5, R6, R7, R8|120Ω||[RMCF1206JT120R](https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF1206JT120R/1757405)|
+|R10, R12, R14, R16|270Ω||[MCR18ERTJ271](https://www.digikey.com/en/products/detail/rohm-semiconductor/MCR18ERTJ271/2796388)|
+|R9, R11, R13, R15|220Ω||[RMCF1206JT220R](https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF1206JT220R/1757377)|
+
+*All SMD parts 1206 size.*

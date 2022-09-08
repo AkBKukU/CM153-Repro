@@ -13854,7 +13854,7 @@
     (property "Reference" "C2" (id 0) (at 80.01 397.5099 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "100uF" (id 1) (at 80.01 400.0499 0)
+    (property "Value" "100nF" (id 1) (at 80.01 400.0499 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (id 2) (at 77.1652 402.59 0)
@@ -14594,7 +14594,7 @@
       (reference "C1") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_1206_3216Metric")
     )
     (path "/dd84c252-9d6b-4991-9b32-6677f036c621"
-      (reference "C2") (unit 1) (value "100uF") (footprint "Capacitor_SMD:C_1206_3216Metric")
+      (reference "C2") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_1206_3216Metric")
     )
     (path "/0c4d1bf0-c881-4eac-8e6b-6c518cb1e3fe"
       (reference "C3") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_1206_3216Metric")
