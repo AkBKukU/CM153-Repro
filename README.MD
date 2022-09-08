@@ -15,7 +15,7 @@ The card has been fully reverse engineered and all hidden traces have been hand 
 *(Parts picked on 2022-09-07 and reflected best available stock)*
 
 |RefDes|Original Part Number| Datasheet| Digikey Part|
---- | --- | ---|
+--- | --- | ---| ---|
 |7101|PC74HCT245P|[Datasheet](https://assets.nexperia.com/documents/data-sheet/74HC_HCT245.pdf)|[CD74HCT245E](https://www.digikey.com/en/products/detail/texas-instruments/CD74HCT245E/38454)|
 |7102|PC74HCT244P|[Datasheet](https://assets.nexperia.com/documents/data-sheet/74HC_HCT244.pdf)|[CD74HCT244E](https://www.digikey.com/en/products/detail/texas-instruments/CD74HCT244E/38450)|
 |7104,7105|PC74HCT138P|[Datasheet](https://archive.org/details/74HCT138)|[CD74HCT138E](https://www.digikey.com/en/products/detail/texas-instruments/CD74HCT138E/38262)|
