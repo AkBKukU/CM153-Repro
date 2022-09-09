@@ -46,6 +46,6 @@ The card has been fully reverse engineered and all hidden traces have been hand 
 |R5, R6, R7, R8|120Ω||[RMCF1206JT120R](https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF1206JT120R/1757405)|[RC1206FR-07120RL](https://www.mouser.com/ProductDetail/YAGEO/RC1206FR-07120RL?qs=sGAEpiMZZMvdGkrng054t8AJgcdMkx7xHngnO2SPVlk%3D)|
 |R10, R12, R14, R16|270Ω||[MCR18ERTJ271](https://www.digikey.com/en/products/detail/rohm-semiconductor/MCR18ERTJ271/2796388)|[RC1206FR-07270RL](https://www.mouser.com/ProductDetail/YAGEO/RC1206FR-07270RL?qs=sGAEpiMZZMvdGkrng054t8AJgcdMkx7xeAVb6tXWI0g%3D)|
 |R9, R11, R13, R15|220Ω||[RMCF1206JT220R](https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF1206JT220R/1757377)|[AC1206JR-07220RL](https://www.mouser.com/ProductDetail/YAGEO/AC1206JR-07220RL?qs=sGAEpiMZZMvdGkrng054t7zOzNqIRvGc5GFE1pYUTcM%3D)|
-|Card Bracket|Bottom DB15 Cutout|[9200-11](https://www.digikey.com/en/products/detail/keystone-electronics/9200-11/2746684)|[9200-11](https://www.mouser.com/ProductDetail/Keystone-Electronics/9200-11?qs=%252BU2dxLPlMC0AIccOWCwv6Q%3D%3D)|
+|Card Bracket|Bottom DB15 Cutout||[9200-11](https://www.digikey.com/en/products/detail/keystone-electronics/9200-11/2746684)|[9200-11](https://www.mouser.com/ProductDetail/Keystone-Electronics/9200-11?qs=%252BU2dxLPlMC0AIccOWCwv6Q%3D%3D)|
 
 *All SMD parts 1206 size.*
