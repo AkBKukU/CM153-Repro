@@ -3591,8 +3591,13 @@
       (net 139 "Net-(TP36-Pad1)") (pinfunction "Pin_7") (pintype "passive") (tstamp 06ac04fc-6887-4db7-90e3-4e0f4155d96d))
     (pad "8" thru_hole oval (at 2.54 7.62 90) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 64 "/IOSEL") (pinfunction "Pin_8") (pintype "passive") (tstamp 222f7cc9-3b13-4497-84c5-cf613455c1d0))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x04_P2.54mm_Vertical.wrl"
+    (model "${KIPRJMOD}/3d/PinHeader_2x04_P254mm_Vertical_green.step"
       (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/3d/Jumper_green.step"
+      (offset (xyz 1.27 -7.62 5.53))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -4171,7 +4176,7 @@
   )
 
   (footprint "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" (layer "F.Cu")
-    (tedit 59FED5CC) (tstamp d7172e4d-8e1d-4c85-bcff-439381cf3a90)
+    (tedit 631BFBFD) (tstamp d7172e4d-8e1d-4c85-bcff-439381cf3a90)
     (at 198.12 59.055)
     (descr "Through hole straight pin header, 2x08, 2.54mm pitch, double rows")
     (tags "Through hole pin header THT 2x08 2.54mm double row")
@@ -4232,7 +4237,7 @@
       (net 24 "GND") (pinfunction "Pin_15") (pintype "passive") (tstamp b677e041-1061-4fbc-9701-694996ed21b1))
     (pad "16" thru_hole oval (at 2.54 17.78) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 24 "GND") (pinfunction "Pin_16") (pintype "passive") (tstamp 91d57969-812a-41f8-a9ad-7a349eecedf0))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x08_P2.54mm_Vertical.wrl"
+    (model "${KIPRJMOD}/3d/PinHeader_2x08_P254mm_Vertical_green_missingpin6.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
