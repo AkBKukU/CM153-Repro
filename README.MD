@@ -8,7 +8,13 @@ Thanks to Roland who has a [working CM-100 and CM-153](https://www.youtube.com/w
 
 ## Current Status
 
-The card has been fully reverse engineered and all hidden traces have been hand verified on original card to be correct. A physical board will be produced soon and tested. The BOM has not been finalized but will be next.
+The card has been fully reverse engineered and tested to be functional. It has been demonstrated to work using [this](http://mpolibbs.steptail.com/hardware/CDROM/PHILIPS/CM50DRV.ZIP) driver with a CM100 drive.
+
+## Notes
+
+A more acurate build will put 7121 in a socket as it must be removed to use the card with an internal drive. If you just want to use it with an external drive this can be ommited.
+
+The selected DB-15 connector doesn't include the screw nuts which can be purchased separately.
 
 ## Parts List
 
