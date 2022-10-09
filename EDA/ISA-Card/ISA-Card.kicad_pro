@@ -34,8 +34,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 5.08,
-          "width": 6.35
+          "height": 7.874,
+          "width": 1.778
         },
         "silk_line_width": 0.254,
         "silk_text_italic": false,
@@ -396,7 +396,7 @@
     "page_layout_descr_file": ""
   },
   "schematic": {
-    "annotate_start_num": 0,
+    "annotate_start_num": 10000,
     "drawing": {
       "default_line_thickness": 6.0,
       "default_text_size": 60.0,
