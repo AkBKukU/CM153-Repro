@@ -1,4 +1,4 @@
-# Philips CM-153 LMSI Reproduction Card
+A# Philips CM-153 LMSI Reproduction Card
 
 ![A 3d render of the board](EDA/card-render-partial.png "A render of the clone PCB")
  
@@ -9,6 +9,110 @@ Thanks to Roland who has a [working CM-100 and CM-153](https://www.youtube.com/w
 ## Current Status
 
 The card has been fully reverse engineered and tested to be functional. It has been demonstrated to work using [this](http://mpolibbs.steptail.com/hardware/CDROM/PHILIPS/CM50DRV.ZIP) driver with a CM100 drive.
+
+## Technical Description
+
+### Reset
+On reset, the 8251 will set DTR and RTS inactive (High).  In this mode, the ISA
+card has control of the CD bus.  On the 8251, TX will loop back to RX.  This 
+provides a method for the driver to detect the card's presence and test some
+basic functionality.
+
+### Port configuration
+The card can be configured to take ports anywhere between 30x and 34x, in 16-
+port increments.  Due to this configurability, port numbers will be
+represented with an x as the middle digit, where x indicates the configured 
+part of the port, between 0 and 4.
+
+### Command Channel
+The command channel is controlled by the 8251.  Port 3x2 is the 8251 data port,
+which sends data over the Command channel and receives replies through the
+Response channel.  The serial flow control lines (RTS, DTR, and DSR) are not
+used for this communication.  They have been repurposed for ancillary tasks.
+
+Port 3x3 writes send 8251 configuration, such as baud rate and DTR and RTS
+states, and 3x3 reads get status such as data available and RS232 input states.
+
+DTR is used to place the card into internal loopback mode (DTR off), or CD
+drive interface mode (DTR on).  If DTR is off (high), DMA operation is also
+inhibited.  On reset, DTR is off.
+
+RTS chooses what kind of condition controls the data status flag.  RTS off
+(high) means that the status flag is triggered when the Attention accumulator
+is full.  RTS on (low) means that the status flag is turned on if Attention has
+been asserted after data transfer has begun.
+
+DSR holds the current status of the Attention input.
+
+### Data Reset
+Access to port 3x0 resets the data registers.  This includes the high-low byte
+toggle for the data serial registers, the DMA request output, the sequence
+trigger latch, and the sequence counter.
+
+The Data Clock is held high while not in use.  On a low transition, the
+sequence counter increments.  On a high transition, the serial data registers
+shift a new bit from the Data line.  There is a reset latch which prevents the
+first low transition from advancing the sequence counter, so that it will only
+count after a bit has been loaded.  This way when it reaches a count of 16, 16
+bits will actually be in the shift registers.
+
+### Data
+Again, on positive transitions of the Data Clock, the Data will be shifted into
+the shift registers.  There are two 8-bit shift registers, and the overflow
+from the first shifts into the second.  This allows data to be gathered 16 bits
+at a time.  On the 16th load, a Data Clock low transition transfers the serial
+shift values into the parallel output registers and activates the DMA request
+flag.  It is expected that the DMA controller will read both registers before
+the next 16 bits have been shifted in.
+
+Because the DMA reads the bytes 1 at a time, there is a 1-bit counter that 
+toggles between the two shift register outputs whenever a DMA read request
+is serviced.  DRQ3 is reset upon the second byte read.  This interfaces well
+with the DMA in Demand Transfer mode.
+
+The data register can only be read by the DMA.
+
+### Attention Register
+On the 4th Data Clock low transition, the Attention line is sampled into the
+Attention Register.  Each following 8 bits will accumulate another sample.
+After 64 bits, the Attention Register Ready flag will be clocked, if RTS is
+inactive (high).  This flag is then reset by a read of the Attention Register.
+
+Note that the Attention Register Ready flag acts differently when RTS is on
+(low).  In this case, the flag is activated by the Attention signal during a 
+data transfer.  However, even in this case, the Attention Register must be read
+to reset the flag.
+
+The Attention Register is read on port 3x6 or 3x7.  Do not write to this port,
+as it will cause the transceiver to fight with the Attention Register.
+
+The Attention Register Ready flag is read on port 3x4 or 3x5.  Bit 7 is the 
+only defined bit.  The others should be ignored, as they are not driven at all
+for a read on this port.
+
+### Operation With DTR Off
+In this mode, data written to the 8251's serial out will be read back in the
+serial in.
+
+The CD interface bus will be under the control of the ISA card rather than the
+CD device.
+
+Access to port 3x8 or 3x9 will advance the data clock.  It will be a low
+transition followed by a high transition.  This will load 1 bit into the data
+serial shift registers, which will be an alternating series of 1's and 0's.
+The registers themselves cannot be read, though, without turning DTR on, which
+gives control back to the CD device, but is necessary to enable DMA transfers.
+It is feasible on initial setup and detection to test the DMA channel by
+clocking 16 bits into the serial registers, programming the DMA for a 2-byte
+transfer, and then turning on DTR, depending on the CD device to remain idle.
+
+The Attention signal will be high for the first 64 bits, then low for the next
+64   The function of the Attention Register and Attention Register Ready Flags
+are otherwise unaffected by this mode.
+
+DTR Off mode is likely used for basic diagnostics and for ISA card detection by
+the driver, as it presents a complex protocol with predictable values that can
+be tested.
 
 ## Notes
 
