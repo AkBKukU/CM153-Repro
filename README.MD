@@ -1,4 +1,4 @@
-# Philips CM-153 LMSI Reproduction Card
+A# Philips CM-153 LMSI Reproduction Card
 
 ![A 3d render of the board](EDA/card-render-partial.png "A render of the clone PCB")
  
@@ -25,12 +25,13 @@ represented with an x as the middle digit, where x indicates the configured
 part of the port, between 0 and 4.
 
 ### Command Channel
-The command channel is controlled by the 8251.  This is the pathway for sending
-commands to the CD drive and receiving responses.  Port 3x3 is written to send
-8251 configuration, such as baud rate and DTR and RTS states, and read for
-8251 status such as data available and RS232 input states.  The serial flow
-control lines (RTS, DTR, and DSR) are not used for this communication.  They
-have been repurposed for ancillary tasks.
+The command channel is controlled by the 8251.  Port 3x2 is the 8251 data port,
+which sends data over the Command channel and receives replies through the
+Response channel.  The serial flow control lines (RTS, DTR, and DSR) are not
+used for this communication.  They have been repurposed for ancillary tasks.
+
+Port 3x3 writes send 8251 configuration, such as baud rate and DTR and RTS
+states, and 3x3 reads get status such as data available and RS232 input states.
 
 DTR is used to place the card into internal loopback mode (DTR off), or CD
 drive interface mode (DTR on).  If DTR is off (high), DMA operation is also
